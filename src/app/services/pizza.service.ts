@@ -14,7 +14,7 @@ export class PizzaService {
 
     getPizzasSlowly(): Promise<Pizza[]> {
         return new Promise(resolve => {
-            setTimeout(() => resolve(this.getPizzas()), 500);
+            setTimeout(() => resolve(this.getPizzas()), 0);
         });
     }
 }

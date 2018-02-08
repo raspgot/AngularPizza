@@ -4,6 +4,8 @@
   </div>
 </div>
 
+<h5>Au total, j'ai {{ total }} pizzas</h5>
+
 <div class="row">
   <div class="col-md-3" *ngFor="let iterationPizza of pizzaList">
       <div class="card">
@@ -11,7 +13,10 @@
           <div class="card-body">
               <h5 class="card-title">{{ iterationPizza.name }}</h5>
               <p class="card-text">{{ iterationPizza.price }}</p>
-              <button (click)="onSelect(iterationPizza)" class="btn btn-primary">Voir la pizza</button>
+              <div class="text-center">
+                <app-counter (augmente)="toto($event)" (diminue)="toto($event)"></app-counter>
+                <button (click)="onSelect(iterationPizza)" class="btn btn-primary">Voir la pizza</button>
+              </div>
           </div>
       </div>
   </div>
