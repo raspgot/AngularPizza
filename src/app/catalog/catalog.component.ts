@@ -11,7 +11,6 @@ import { PizzaService } from '../services/pizza.service';
 export class CatalogComponent {
   pizzaList: Pizza[];
   selectedPizza: Pizza;
-  total = 0;
 
   constructor(private pizzaService: PizzaService) {
     this.pizzaService.getPizzasSlowly().then(pizzas => this.pizzaList = pizzas);
@@ -19,9 +18,5 @@ export class CatalogComponent {
 
   onSelect (pizza) {
     this.selectedPizza = pizza;
-  }
-
-  toto (event) {
-    this.total += event;
   }
 }

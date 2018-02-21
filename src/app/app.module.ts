@@ -9,7 +9,6 @@ import { PizzaComponent } from './pizza/pizza.component';
 import { MenuComponent } from './menu/menu.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
 
 
 @NgModule({
@@ -18,8 +17,7 @@ import { CounterComponent } from './counter/counter.component';
     PizzaComponent,
     MenuComponent,
     CatalogComponent,
-    HomeComponent,
-    CounterComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
